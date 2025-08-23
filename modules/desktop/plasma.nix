@@ -5,7 +5,7 @@
   services.displayManager.sddm.enable = true;
 
   # Audio
-	security.rtkit.enable = true;
+  security.rtkit.enable = true;
   services.pipewire.enable = true;
   services.pipewire.alsa.enable = true;
   services.pipewire.alsa.support32Bit = true;
