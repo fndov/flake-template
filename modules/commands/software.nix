@@ -10,5 +10,5 @@ in{
     htop
     # vim
   ];
-  # Please see https://search.nixos.org/packages to see which packages are available.
+  # Please see https://search.nixos.org/packages to see which packages are available
 }
