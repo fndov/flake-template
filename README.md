@@ -51,11 +51,23 @@ git clone https://github.com/fndov/Simple-Flake ~/.flake
 
 cp /etc/nixos/hardware-configuration.nix ~/.flake/profile/home/hardware.nix
 cp /etc/nixos/hardware-configuration.nix ~/.flake/profile/workstation/hardware.nix
-
-sudo nixos-rebuild switch --flake ~/.flake#home
 ```
+Specify your drive type (scroll to the bottom)
+```
+nano ~/.flake/compose.nix
+```
+Set your username.
+```
+nano ~/.flake/flake.nix
+```
+Rebuild & reboot to be safe, or just switch.
+```
+sudo nixos-rebuild boot --flake ~/.flake#home
+```
+The password is set in `compose.nix`, by default it's: 'password'.
 
-Important links:
+---
+#### Important links:
 
 [How to setup NVIDIA](https://nixos.wiki/wiki/Nvidia)
 
