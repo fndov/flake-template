@@ -52,13 +52,13 @@ git clone https://github.com/fndov/Simple-Flake ~/.flake
 cp /etc/nixos/hardware-configuration.nix ~/.flake/profile/home/hardware.nix
 cp /etc/nixos/hardware-configuration.nix ~/.flake/profile/workstation/hardware.nix
 ```
-Specify your drive type (scroll to the bottom)
-```
-nano ~/.flake/compose.nix
-```
 Set your username.
 ```
 nano ~/.flake/flake.nix
+```
+Specify your drive type (scroll to the bottom)
+```
+nano ~/.flake/compose.nix
 ```
 Rebuild & reboot to be safe, or just switch.
 ```
