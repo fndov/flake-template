@@ -44,8 +44,8 @@ Import flow
       └─ gnome.nix          (Your desktop)
 
 ```
-
-#### Setup
+---
+### Setup
 ```
 git clone https://github.com/fndov/Simple-Flake ~/.flake && rm -rf ~/.flake/.git
 
