@@ -1,4 +1,4 @@
-### This is a beginner's guide to setting up a NixOS system using flakes.
+### This is a beginners guide to setting up a NixOS system using flakes.
 
 #### Why this flake?
 
