@@ -47,7 +47,7 @@ Import flow
 
 #### Setup
 ```
-git clone https://github.com/fndov/Simple-Flake ~/.flake
+git clone https://github.com/fndov/Simple-Flake ~/.flake && rm -rf ~/.flake/.git
 
 cp /etc/nixos/hardware-configuration.nix ~/.flake/profile/home/hardware.nix
 cp /etc/nixos/hardware-configuration.nix ~/.flake/profile/workstation/hardware.nix
