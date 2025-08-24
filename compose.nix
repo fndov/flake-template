@@ -30,7 +30,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.useOSProber = true;
 
-  # Just uncomment your drive type:
+  # Uncomment your drive type:
   boot.loader.grub.device =
   # "/dev/vda";     /* Virtual drive     */
   # "/dev/sda";     /* Physical drive    */
