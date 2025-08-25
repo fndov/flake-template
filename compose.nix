@@ -13,7 +13,6 @@
   users.users.${settings.account.name} = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ];
-    password = "password";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -29,6 +28,7 @@
 
   boot.loader.grub.enable = true;
   boot.loader.grub.useOSProber = true;
+  boot.plymouth.enable = true;
 
   # Uncomment your drive type:
   boot.loader.grub.device =
