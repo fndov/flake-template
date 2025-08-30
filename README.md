@@ -6,7 +6,7 @@
 
 When you checkout someone else's flake or want to modify your own, it should make sense where things are.
 
-This flake assumes your already have NixOS installed and are ready to transition to flakes.
+This flake assumes you already have NixOS installed and are ready to transition to flakes.
 
 Benefits of using flakes include:
 - Version locking
