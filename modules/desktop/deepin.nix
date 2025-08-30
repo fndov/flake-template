@@ -1,8 +1,10 @@
 { ... }: {
-  # Enable desktop environment
-  services.xserver.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
+
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.deepin.enable = true;
+  services.displayManager.defaultSession = "dde-x11";
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "nixi";
 
   # Audio
   security.rtkit.enable = true;

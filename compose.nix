@@ -13,6 +13,7 @@
   users.users.${settings.account.name} = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ];
+    hashedPassword = "<hashed_password>";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -26,13 +27,15 @@
   networking.networkmanager.enable = true;
   # services.openssh.enable = true;
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.useOSProber = true;
-  boot.plymouth.enable = true;
+  # boot.loader.grub.useOSProber = true;
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.efiSysMountPoint = "/boot";
+  boot.loader.grub.efiSupport = true;
 
   # Uncomment your drive type:
   boot.loader.grub.device =
   # "/dev/vda";     /* Virtual drive     */
-  # "/dev/sda";     /* Physical drive    */
+  "/dev/sda";     /* Physical drive    */
   # "/dev/nvme0n1"; /* Solid state drive */
 }
