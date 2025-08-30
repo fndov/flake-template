@@ -8,6 +8,8 @@ in{
     # Use the prefix 'unstable.' for unstable packages
     git
     htop
+    glib
+    glibc
     # vim
   ];
   # Please see https://search.nixos.org/packages to see which packages are available
