@@ -106,7 +106,22 @@ Installs software to the shell (not the system) and is discarded when the shell 
 
 #### Important links:
 
-[How to setup NVIDIA](https://nixos.wiki/wiki/Nvidia)
+[How to setup NVIDIA](https://nixos.wiki/wiki/Nvidia) <br>
+Copy paste to compose.nix and add `config` to `{ settings, .. }:` => `{ settings, config, ... }:`
+```
+  hardware.nvidia.open = false;
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.production;
+  boot.blacklistedKernelModules = [ "nouveau" ];
+  services.xserver.videoDrivers = [ "nvidia" ];
+  boot.kernelParams = [
+    "nvidia_drm"
+    "nvidia_modeset"
+    "nvidia_uvm"
+    "nvidia-drm.fbdev=1"
+    "nvidia"
+  ];
+```
+
 
 [NixOS packages](https://search.nixos.org/packages)
 
