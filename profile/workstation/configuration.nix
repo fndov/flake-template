@@ -9,8 +9,5 @@
   # One line to change the kernel, comment out to use LTS
   boot.kernelPackages = pkgs.linuxPackages_latest; # pkgs.linuxPackages_xanmod
   boot.kernelParams = [ ];
-  boot.blacklistedKernelModules = [
-    # In order to use the official NVIDIA drivers, blacklist nouveau
-    # "nouveau"
-  ];
+  boot.blacklistedKernelModules = [ ];
 }
