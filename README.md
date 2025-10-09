@@ -95,7 +95,7 @@ sudo nix-collect-garbage
 Deletes all previous generations so you don't run out of space.
 
 ```
-sudo nix flake update --flake ~/.flake#home
+sudo nix flake update --flake ~/.flake
 ```
 Update system.
 
